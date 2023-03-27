@@ -7,8 +7,8 @@ void *rNs(void *argv){
 		if(len <= 0) {
 			_log("connect ","closed"," \n");
 			cfdclose(tmpFd);
-			cfdclose(SIdx[tmpFd]);
 			pthread_cancel(worker[SIdx[tmpFd]]);
+			cfdclose(SIdx[tmpFd]);
 			regD[tmpFd]=0;
 			regD[SIdx[tmpFd]]=0;
 			pthread_exit(0);
