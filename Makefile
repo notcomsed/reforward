@@ -6,5 +6,8 @@ reforward:
 	cat main.c>>reforward.c
 	$(CC) reforward.c -o reforward -static -pthread
 	
+reforward2:
+	$(CC) reforward2.c -o reforward -static
+
 clean:
 	rm reforward.*
