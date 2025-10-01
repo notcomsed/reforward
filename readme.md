@@ -1,8 +1,6 @@
 # reforward
 simple tcp forward tool. use epoll events.
 
-其他版本：[reforward-rs](https://github.com/notcomsed/reforward-rs) 
-###### (使用rust重写的reforward)
 
 ---
 
